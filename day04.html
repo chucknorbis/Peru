@@ -10,18 +10,18 @@
 <div class="topbar"><div class="brand"><b>PERU</b>EXPEDITION 2027 &middot; CLUJ GROUP OF 7</div>
 <nav class="topnav"><a href="index.html">Route</a><a href="index.html#days">Days</a><a href="summary.html">Field manual</a></nav></div>
 
-<div class="eyebrow" style="margin-top:26px">Day 04 &middot; Sun May 3, 2027 &middot; Sacred Valley circuit</div>
+<div class="eyebrow" style="margin-top:26px">Day 04 &middot; Mon May 3, 2027 &middot; Sacred Valley circuit</div>
 <h1 class="disp">Pisac, Moray &amp; the Salt Mines</h1>
 <div class="datastrip"><div><div class="k">Altitude</div><div class="v" style="font-size:15px">2,900-3,500 m</div></div><div><div class="k">Difficulty</div><div class="v" style="font-size:15px">Moderate</div></div><div><div class="k">On foot</div><div class="v" style="font-size:15px">6 km</div></div><div><div class="k">Est. cost/pp</div><div class="v" style="font-size:15px">~50 EUR</div></div><div><div class="k">Sunrise / set</div><div class="v" style="font-size:15px">05:54 / 17:27</div></div><div><div class="k">Weather</div><div class="v" style="font-size:15px">20 C, strong sun</div></div></div>
-<div class="hl"><div><div class="n">HIGHLIGHT 01</div><div class="t">Sunday market day in Pisac - the big one</div></div><div><div class="n">HIGHLIGHT 02</div><div class="t">Moray's crop-laboratory rings</div></div><div><div class="n">HIGHLIGHT 03</div><div class="t">4,500 white salt pans of Maras</div></div></div>
+<div class="hl"><div><div class="n">HIGHLIGHT 01</div><div class="t">Pisac's artisan market - open every day</div></div><div><div class="n">HIGHLIGHT 02</div><div class="t">Moray's crop-laboratory rings</div></div><div><div class="n">HIGHLIGHT 03</div><div class="t">4,500 white salt pans of Maras</div></div></div>
 <div class="cols">
   <div>
     <div id="map" class="map"></div>
     <div class="map-cap">Numbered points of interest &middot; drag &amp; zoom &middot; tap a pin for its name</div>
-    <div class="poi"><div><b>1</b>Pisac citadel &amp; terraces<span class="co">-13.4150, -71.8470</span></div><div><b>2</b>Pisac Sunday market<span class="co">-13.4225, -71.8469</span></div><div><b>3</b>Moray concentric terraces<span class="co">-13.3296, -72.1963</span></div><div><b>4</b>Salineras de Maras<span class="co">-13.3006, -72.1558</span></div></div>
+    <div class="poi"><div><b>1</b>Pisac citadel &amp; terraces<span class="co">-13.4150, -71.8470</span></div><div><b>2</b>Pisac artisan market<span class="co">-13.4225, -71.8469</span></div><div><b>3</b>Moray concentric terraces<span class="co">-13.3296, -72.1963</span></div><div><b>4</b>Salineras de Maras<span class="co">-13.3006, -72.1558</span></div></div>
   </div>
   <div>
-    <div class="prose"><p class="dropcap">A full valley circuit by private van. Pisac stacks sprawling terraces beneath a hilltop citadel, above one of Peru's most famous artisan markets - and today is Sunday, its biggest day.</p><p>Moray's concentric rings - each level its own microclimate - were most likely an Inca agricultural laboratory. Finish at the Salineras: four and a half thousand blinding-white salt pans terraced down a hillside, harvested by the same families since before the Incas.</p></div>
+    <div class="prose"><p class="dropcap">A full valley circuit by private van. Pisac stacks sprawling terraces beneath a hilltop citadel, above one of Peru's most famous artisan markets. It trades every day of the week; the Sunday blow-out falls on yesterday's arrival leg, so today brings calmer lanes and easier haggling.</p><p>Moray's concentric rings - each level its own microclimate - were most likely an Inca agricultural laboratory. Finish at the Salineras: four and a half thousand blinding-white salt pans terraced down a hillside, harvested by the same families since before the Incas.</p></div>
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>08:00</b>Van to Pisac citadel (terraces first, cool air)</li><li><b>10:30</b>Pisac market - fruit, textiles, haggling</li><li><b>12:30</b>Valley-floor lunch</li><li><b>14:00</b>Moray rings</li><li><b>15:30</b>Maras salt pans, low light on the white</li><li><b>17:30</b>Return Ollantaytambo</li></ul></div>
   </div>
 </div>
@@ -45,7 +45,7 @@ function pin(n,gold){return L.divIcon({className:'',html:'<div class="numpin'+(g
 
 var m=L.map('map',{scrollWheelZoom:false}).setView([-13.36,-72.02],11);
 topo().addTo(m);
-var P=[[-13.415, -71.847, "Pisac citadel &amp; terraces"], [-13.4225, -71.8469, "Pisac Sunday market"], [-13.3296, -72.1963, "Moray concentric terraces"], [-13.3006, -72.1558, "Salineras de Maras"]];
+var P=[[-13.415, -71.847, "Pisac citadel &amp; terraces"], [-13.4225, -71.8469, "Pisac artisan market"], [-13.3296, -72.1963, "Moray concentric terraces"], [-13.3006, -72.1558, "Salineras de Maras"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
 <script>var GALLERY=[{"f":"Salineras de Maras, Maras, Perú, 2015-07-30, DD 12.JPG","c":"The salt terraces of Maras"},{"f":"Pisac006.jpg","c":"Inca terraces sweeping below Pisac"},{"f":"Pisac ruins.jpg","c":"The hilltop citadel of Pisac"},{"f":"Pisac market.jpg","c":"Textile stalls at the Pisac market"},{"f":"Moray, Maras, Perú, 2015-07-30, DD 06.JPG","c":"Moray's concentric crop terraces"},{"f":"Moray, Maras, Perú, 2015-07-30, DD 12.JPG","c":"Inside the great bowl of Moray"},{"f":"Salineras de Maras, Maras, Perú, 2015-07-30, DD 07.JPG","c":"Terraced brine ponds of Salineras"},{"f":"Salinas de Maras.jpg","c":"Salt harvest on the valley wall"}];</script>
