@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>10:00</b>Fly AQP-LIM (~1h30)</li><li><b>12:30</b>Check in Miraflores/Barranco</li><li><b>14:00</b>Free: Larcomar or full Malecon walk</li><li><b>17:30</b>Huaca Pucllana - floodlit night visit</li><li><b>20:00</b>Dinner: anticuchos + causa + aji de gallina</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Huaca_Pucllana,_Miraflores.jpg?width=1200" alt="Huaca Pucllana, Miraflores" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Huaca Pucllana, Miraflores</div>
-<figcaption>Huaca Pucllana, Miraflores &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Morning AQP-LIM flights are most reliable (LATAM / Sky, ~55 EUR)</li><li>Fragile souvenirs into cabin bags for this hop</li><li>Huaca Pucllana night visits Wed-Sun - book the table too</li><li>Reserve tomorrow's farewell cevicheria NOW - top ones fill days out</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Window seat: the desert-and-surf coastline south of Lima</li><li>Huaca Pucllana floodlit adobe layers - night mode, brace on the rail</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-16.3411, -71.583, "Arequipa airport (AQP)"], [-12.1318, -77.0306, "Larcomar cliff mall"], [-12.111, -77.033, "Huaca Pucllana pyramid"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Huaca Pucllana, Miraflores.jpg","c":"Huaca Pucllana, Miraflores"},{"f":"Huaca Pucllana, Lima.jpg","c":"Pre-Inca pyramid amid modern Miraflores"},{"f":"Larcomar, Miraflores, Lima.jpg","c":"Evening at Larcomar on the cliffs"},{"f":"Costa Verde, Lima.jpg","c":"Costa Verde beaches below the cliffs"},{"f":"Miraflores, Lima, Peru.jpg","c":"Miraflores skyline meets the sea"},{"f":"Malecón de Miraflores, Lima.jpg","c":"Sunset walk on the Miraflores malecón"},{"f":"Vista panorámica de la Costa Verde (Miraflores).jpg","c":"Back on Lima's Pacific coast"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

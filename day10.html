@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>04:45</b>Silent canoe to the collpa</li><li><b>06:00</b>Parrot &amp; macaw spectacle (1-2 h)</li><li><b>08:30</b>Lodge breakfast</li><li><b>10:00</b>Hike + paddle into Lake Sandoval</li><li><b>12:30</b>Picnic on the lake</li><li><b>15:00</b>Otter watch, hoatzin birds</li><li><b>17:00</b>Return paddle</li><li><b>20:00</b>Night jungle walk</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Sandoval,_Peru.jpg?width=1200" alt="Lake Sandoval, Tambopata National Reserve" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Lake Sandoval, Tambopata National Reserve</div>
-<figcaption>Lake Sandoval, Tambopata National Reserve &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Clay-lick activity is best in dry season and mornings only - May is good</li><li>Sandoval sits inside the National Reserve: passport needed at the SERNANP post</li><li>Rubber boots (lodge-issued) obligatory - the trail is real mud</li><li>One binocular pair per 2-3 people transforms the day</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Collpa: long zoom, shoot bursts when the flock lifts</li><li>Sandoval mirror-water at noon: symmetrical palm reflections</li><li>Otters: patience + silence beat any lens</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-12.65, -69.12, "Parrot clay lick (collpa)"], [-12.61, -69.07, "Reserve entry post - passports"], [-12.606, -69.041, "Lake Sandoval"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Lake Sandoval, Peru.jpg","c":"Lake Sandoval, Tambopata National Reserve"},{"f":"Lago Sandoval.jpg","c":"Palm-fringed shore of Lago Sandoval"},{"f":"Scarlet macaws at clay lick, Tambopata.jpg","c":"Macaws crowd the dawn clay lick"},{"f":"Macaw clay lick, Tambopata.jpg","c":"The collpa at first light"},{"f":"Scarlet Macaw (Ara macao).jpg","c":"A scarlet macaw in full color"},{"f":"Pteronura brasiliensis.jpg","c":"Giant otter, lord of the oxbow lake"},{"f":"Giant otter.jpg","c":"A giant river otter surfaces"},{"f":"Tambopata National Reserve.jpg","c":"Primary rainforest of the Tambopata reserve"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

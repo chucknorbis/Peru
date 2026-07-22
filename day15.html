@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>09:00</b>Santa Catalina - 2-3 h in the painted lanes</li><li><b>12:00</b>Santuarios Andinos: Juanita tour</li><li><b>13:30</b>THE picanteria lunch (12:00-16:00 only)</li><li><b>16:00</b>San Camilo market wander</li><li><b>18:00</b>Rooftop cafe, volcano watching</li><li><b>20:00</b>Light dinner - lunch was the event</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Monasterio_de_Santa_Catalina,_Arequipa,_Perú,_2015-08-02,_DD_35.JPG?width=1200" alt="Inside Santa Catalina monastery" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Inside Santa Catalina monastery</div>
-<figcaption>Inside Santa Catalina monastery &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Santa Catalina ~12 EUR; candle-lit evening openings some days - ask</li><li>Juanita: guided entry only ~7 EUR, photography prohibited</li><li>Picanterias serve LUNCH only - do not miss the window</li><li>Early night: Colca pickup ~07:30 tomorrow</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Santa Catalina's blue courtyard vs ochre lane - colour-block corridors</li><li>Geraniums against cobalt walls, midday works here</li><li>El Misti from a rooftop cafe with sillar foreground, 17:30</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-16.3958, -71.5364, "Santa Catalina Monastery"], [-16.4, -71.538, "Museo Santuarios Andinos - 'Juanita'"], [-16.403, -71.534, "San Camilo market"], [-16.39, -71.545, "Picanteria lunch (Yanahuara side)"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Monasterio de Santa Catalina, Arequipa, Perú, 2015-08-02, DD 35.JPG","c":"Inside Santa Catalina monastery"},{"f":"Monasterio de Santa Catalina, Arequipa.jpg","c":"Ochre and blue lanes of Santa Catalina"},{"f":"Momia Juanita.jpg","c":"Juanita, the Inca Ice Maiden"},{"f":"Mercado San Camilo, Arequipa.jpg","c":"Stalls of San Camilo market"},{"f":"Iglesia de la Compañía, Arequipa.jpg","c":"Carved sillar facade of La Compañía"},{"f":"Claustros de la Compañía, Arequipa.jpg","c":"Sillar cloisters of La Compañía"},{"f":"Casa del Moral, Arequipa.jpg","c":"Casa del Moral, colonial sillar mansion"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

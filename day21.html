@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>09:00</b>Final Malecon walk + ocean-view brunch</li><li><b>12:00</b>Check out; bags stored</li><li><b>15:30</b>Van to LIM (traffic buffer)</li><li><b>~20:00</b>Fly LIM-MAD overnight</li><li><b>Fri pm</b>Land Madrid; buffer</li><li><b>20:50</b>Wizz MAD-CLJ</li><li><b>01:30</b>Home, Cluj-Napoca</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Costa_Verde,_Lima.jpg?width=1200" alt="The Costa Verde, one last time" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">The Costa Verde, one last time</div>
-<figcaption>The Costa Verde, one last time &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Reconfirm LIM-MAD departure time at booking - evening departures are the norm, carriers vary</li><li>One van for 7 + luggage (~28 EUR) beats two taxis</li><li>No separate Peru exit tax - it is in the ticket</li><li>If Madrid arrival slips past ~16:00, trigger plan B: next Wizz flight or a Madrid night</li><li>Pisco + chocolate: buy in a city supermarket, not the airport</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Last frame: the group at the Parque del Amor wall where day 1 started</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-12.133, -77.035, "Last Malecon stroll"], [-12.0219, -77.1143, "Jorge Chavez airport (LIM)"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Costa Verde, Lima.jpg","c":"The Costa Verde, one last time"},{"f":"Malecón Cisneros, Miraflores.jpg","c":"Last morning on the malecón"},{"f":"Malecón de la Reserva, Miraflores, Lima.jpg","c":"Malecón de la Reserva viewpoint"},{"f":"Faro de la Marina, Miraflores, Lima.jpg","c":"La Marina lighthouse, Miraflores"},{"f":"Aeropuerto Internacional Jorge Chávez.jpg","c":"Jorge Chávez International Airport"},{"f":"Jorge Chávez International Airport, Lima.jpg","c":"Departure from Lima's main airport"},{"f":"Vista panorámica de la Costa Verde (Miraflores).jpg","c":"One last look at Lima's green coast"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

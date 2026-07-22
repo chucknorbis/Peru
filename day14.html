@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>08:00</b>Day bus Puno -&gt; Arequipa (~6 h)</li><li><b>10:30</b>Laguna Lagunillas - cameras ready</li><li><b>14:30</b>Arrive; check in near the plaza</li><li><b>16:30</b>Yanahuara viewpoint walk</li><li><b>18:00</b>Plaza de Armas at dusk</li><li><b>20:00</b>Courtyard dinner in the centre</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Basílica_Catedral,_Plaza_de_Armas,_Arequipa,_Perú,_2015-08-02,_DD_68.JPG?width=1200" alt="Arequipa's Plaza de Armas and cathedral" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Arequipa's Plaza de Armas and cathedral</div>
-<figcaption>Arequipa's Plaza de Armas and cathedral &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Cruz del Sur / Oltursa day buses ~18 EUR - skip cheap night buses on this route</li><li>Reserve the 2-day Colca tour for May 15-16 tonight if not pre-booked (~75 EUR pp)</li><li>Book a picanteria lunch for tomorrow - they serve midday only</li><li>The easiest climate of the trip: warm days, mild nights</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Flamingos at Lagunillas - right-side windows, fast shutter</li><li>Yanahuara's sillar arches framing El Misti at golden hour</li><li>Plaza colonnades at blue hour: symmetrical from the cathedral steps</li></ul></div>
@@ -51,4 +48,6 @@ topo().addTo(m);
 var P=[[-15.735, -70.766, "Laguna Lagunillas - flamingos"], [-16.3989, -71.537, "Arequipa Plaza de Armas"], [-16.388, -71.544, "Yanahuara viewpoint"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Basílica Catedral, Plaza de Armas, Arequipa, Perú, 2015-08-02, DD 68.JPG","c":"Arequipa's Plaza de Armas and cathedral"},{"f":"Plaza de Armas de Arequipa.jpg","c":"Plaza de Armas, heart of the White City"},{"f":"Catedral de Arequipa.jpg","c":"Neo-Renaissance cathedral in sillar stone"},{"f":"El Misti from Arequipa.jpg","c":"El Misti volcano looms over the city"},{"f":"Mirador de Yanahuara, Arequipa.jpg","c":"Sillar arches at the Yanahuara viewpoint"},{"f":"Laguna Lagunillas.jpg","c":"Lagunillas lagoon on the altiplano"},{"f":"James Flamingos MC.jpg","c":"Flamingos of the high Andes"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

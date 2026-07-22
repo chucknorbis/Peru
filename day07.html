@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>09:00</b>Qorikancha - Inca masonry under baroque arches</li><li><b>11:00</b>San Pedro market juice crawl</li><li><b>13:00</b>Menu del dia lunch</li><li><b>14:30</b>Taxi up to Sacsayhuaman</li><li><b>16:30</b>Walk down through San Blas</li><li><b>18:30</b>Plaza de Armas at blue hour</li><li><b>20:00</b>Picanteria dinner</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_de_Armas,_Cusco,_Perú,_2015-07-31,_DD_35.JPG?width=1200" alt="Plaza de Armas, Cusco" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Plaza de Armas, Cusco</div>
-<figcaption>Plaza de Armas, Cusco &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Sacsayhuaman is on your Boleto Turistico</li><li>The 12-angled stone is free - on Hatun Rumiyoc lane</li><li>Cusco nights near 0 C; hotels lack central heating - request heaters</li><li>Chocolate &amp; Pisco museums near the plaza do free tastings</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Qorikancha's curved wall - the finest masonry in Peru, side-lit morning</li><li>Sacsayhuaman zig-zags with Cusco bowl behind, 16:00 light</li><li>Blue hour on Plaza de Armas: cathedral floodlights + last sky</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-13.5164, -71.9785, "Plaza de Armas"], [-13.5209, -71.9755, "Qorikancha - Sun Temple"], [-13.5199, -71.984, "San Pedro market"], [-13.5158, -71.976, "12-angled stone, Hatun Rumiyoc"], [-13.5078, -71.9822, "Sacsayhuaman fortress"], [-13.5145, -71.976, "San Blas artisan quarter"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Plaza de Armas, Cusco, Perú, 2015-07-31, DD 35.JPG","c":"Plaza de Armas, Cusco"},{"f":"Cusco Cathedral.jpg","c":"The cathedral rises over the Plaza de Armas"},{"f":"Coricancha, Cusco, Peru.jpg","c":"Qorikancha, the Inca Temple of the Sun"},{"f":"San Pedro Market, Cusco.jpg","c":"Stalls and colors of San Pedro market"},{"f":"Piedra de los doce ángulos.jpg","c":"The twelve-angled stone on Hatun Rumiyoc"},{"f":"Saqsaywaman.jpg","c":"The zigzag ramparts of Sacsayhuaman"},{"f":"Sacsayhuaman wall.jpg","c":"Giant Inca masonry at Sacsayhuaman"},{"f":"Cusco San Blas.jpg","c":"Whitewashed lanes of the San Blas quarter"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

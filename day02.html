@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>09:00</b>Uber to Plaza Mayor</li><li><b>10:00</b>San Francisco catacombs tour</li><li><b>11:30</b>Jiron de la Union stroll, street snacks</li><li><b>13:00</b>Criollo lunch in the centre</li><li><b>16:00</b>Barranco: murals, Bridge of Sighs</li><li><b>18:00</b>Sunset + dinner in Barranco</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Basílica_y_convento_de_San_Francisco,_Lima,_Perú,_2015-07-28,_DD_77.JPG?width=1200" alt="San Francisco monastery, Lima" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">San Francisco monastery, Lima</div>
-<figcaption>San Francisco monastery, Lima &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Catacombs: guided entry only (~4 EUR), English tours every 30 min</li><li>Front pockets for phones in the crowded centre</li><li>Changing of the guard at the Palace around midday</li><li>Reserve dinner for 7 - holiday evenings fill up</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Catacomb bone-wells (no flash) - brace the phone on the railing</li><li>Yellow arcades of Plaza Mayor: symmetry shot from the fountain</li><li>Barranco murals in golden hour; the Bridge of Sighs from below on the Bajada</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-12.0453, -77.0311, "Plaza Mayor &amp; Government Palace"], [-12.0447, -77.0272, "Monastery of San Francisco &amp; catacombs"], [-12.048, -77.033, "Jiron de la Union pedestrian street"], [-12.1489, -77.0219, "Puente de los Suspiros, Barranco"], [-12.147, -77.0225, "Barranco murals &amp; galleries"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Basílica y convento de San Francisco, Lima, Perú, 2015-07-28, DD 77.JPG","c":"San Francisco monastery, Lima"},{"f":"Plaza Mayor de Lima.jpg","c":"Plaza Mayor, Lima's colonial heart"},{"f":"Plaza de Armas de Lima.jpg","c":"Plaza de Armas and the cathedral"},{"f":"Palacio de Gobierno del Perú.jpg","c":"Government Palace of Peru"},{"f":"Iglesia de San Francisco de Lima.jpg","c":"Baroque facade of San Francisco"},{"f":"Jirón de la Unión.jpg","c":"Pedestrian Jirón de la Unión"},{"f":"Puente de los Suspiros, Barranco.jpg","c":"Bridge of Sighs in Barranco"},{"f":"Bajada de los Baños, Barranco, Lima.jpg","c":"Bajada de los Baños, Barranco's mural walk"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

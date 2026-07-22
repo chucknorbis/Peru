@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>06:00</b>Early start along the rim road</li><li><b>08:00</b>Cruz del Condor - thermals rise, condors launch</li><li><b>10:00</b>Rim walk to the far platform</li><li><b>11:00</b>Maca + Yanque villages</li><li><b>13:00</b>Chivay lunch</li><li><b>14:30</b>Re-cross Patapampa</li><li><b>17:00</b>Arrive Arequipa - farewell-to-the-Andes dinner</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Condor_flying_over_the_Colca_canyon.jpg?width=1200" alt="Andean condor over the Colca canyon" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Andean condor over the Colca canyon</div>
-<figcaption>Andean condor over the Colca canyon &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Condor peak activity 08:00-10:00; May is a very reliable month, but wild animals guarantee nothing</li><li>Drones strictly forbidden; never buy 'condor feather' souvenirs (illegal)</li><li>The far platform is usually less crowded - short rim walk</li><li>Fit-group alternative treks exist but clash with tomorrow's travel - skip</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Condors: pre-focus on the cliff edge, burst mode as they bank past</li><li>Wide shot down-canyon with terrace geometry, morning shadow</li><li>Yanque church facade - carved sillar detail</li></ul></div>
@@ -51,4 +48,6 @@ topo().addTo(m);
 var P=[[-15.6094, -71.9036, "Cruz del Condor viewpoint"], [-15.639, -71.77, "Maca village"], [-15.652, -71.666, "Yanque village &amp; church"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Condor flying over the Colca canyon.jpg","c":"Andean condor over the Colca canyon"},{"f":"Colca-condor-c03.jpg","c":"Condor soaring at Cruz del Cóndor"},{"f":"Cruz del Condor, Colca Canyon, Peru.jpg","c":"The Cruz del Cóndor viewpoint"},{"f":"Colca Canyon, Peru.jpg","c":"Colca, one of the world's deepest canyons"},{"f":"Colca Canyon from Cruz del Condor.jpg","c":"Canyon depths from Cruz del Cóndor"},{"f":"Iglesia de Santa Ana, Maca.jpg","c":"Church of Santa Ana in Maca"},{"f":"Iglesia de la Inmaculada Concepción de Yanque.jpg","c":"Yanque's baroque village church"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

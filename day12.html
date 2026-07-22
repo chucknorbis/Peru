@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>07:00</b>Tourist bus departs Cusco</li><li><b>08:00</b>Andahuaylillas church</li><li><b>10:00</b>Raqchi temple</li><li><b>12:30</b>Buffet lunch, Sicuani</li><li><b>14:00</b>La Raya pass photo stop</li><li><b>15:30</b>Altiplano crossing - llamas, storms, gold light</li><li><b>17:00</b>Arrive Puno; short lakefront walk</li><li><b>19:30</b>Trout dinner, early night</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia_de_San_Pedro_Apóstol_de_Andahuaylillas.jpg?width=1200" alt="Andahuaylillas, the 'Sistine Chapel of the Andes'" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Andahuaylillas, the 'Sistine Chapel of the Andes'</div>
-<figcaption>Andahuaylillas, the 'Sistine Chapel of the Andes' &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Inka Express / Turismo Mer: ~50 EUR incl. guide, lunch, all entries - vastly better than the plain bus</li><li>Right-side seats get the La Raya views</li><li>Puno is higher than Cusco - easy evening if anyone feels it</li><li>Book tomorrow's Uros + Taquile full-day boat tonight (~30 EUR with lunch)</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Andahuaylillas ceiling: brace phone on a pew, no flash</li><li>La Raya: snow peaks + the sign at 4,335 m - group photo point</li><li>Golden-hour llamas from the moving bus - fast shutter</li></ul></div>
@@ -51,4 +48,6 @@ topo().addTo(m);
 var P=[[-13.672, -71.68, "Andahuaylillas - 'Sistine of the Andes'"], [-14.175, -71.369, "Raqchi - Temple of Wiracocha"], [-14.483, -70.989, "La Raya pass - 4,335 m"], [-15.8402, -70.0219, "Puno, Lake Titicaca"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Iglesia de San Pedro Apóstol de Andahuaylillas.jpg","c":"Andahuaylillas, the 'Sistine Chapel of the Andes'"},{"f":"Templo de Wiracocha, Raqchi.jpg","c":"Temple of Wiracocha walls at Raqchi"},{"f":"Raqchi Site.jpg","c":"Inca ruins of Raqchi on the Ruta del Sol"},{"f":"Abra La Raya, Perú.jpg","c":"La Raya pass, high point of the route"},{"f":"Altiplano.jpg","c":"High altiplano scenery en route to Puno"},{"f":"Catedral de Puno.jpg","c":"Baroque cathedral of Puno"},{"f":"Puno, Peru.jpg","c":"Puno on the shore of Lake Titicaca"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>05:15</b>Canopy tower for sunrise</li><li><b>07:30</b>Breakfast; boat downriver</li><li><b>10:30</b>Town: reclaim bags</li><li><b>13:30</b>Fly PEM-CUZ</li><li><b>15:30</b>Cusco hotel; laundry pickup</li><li><b>17:00</b>Souvenirs: Triunfo st. + San Blas silver</li><li><b>20:00</b>Farewell-to-Cusco picanteria feast</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cusco_San_Blas.jpg?width=1200" alt="San Blas quarter, Cusco" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">San Blas quarter, Cusco</div>
-<figcaption>San Blas quarter, Cusco &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Take a mid/late-afternoon flight to keep the morning activity</li><li>Real baby-alpaca scarves ~15-25 EUR; a 5-EUR one is acrylic</li><li>Buy tomorrow's Ruta del Sol bus seats today (Inka Express / Turismo Mer)</li><li>Withdraw cash - Puno ATMs are scarcer and pricier</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Canopy tower 05:30: mist rivers between the crowns</li><li>Flight window CUZ approach: jungle folding into mountains</li><li>San Blas lanes at dusk - warm doorway light</li></ul></div>
@@ -51,4 +48,6 @@ topo().addTo(m);
 var P=[[-12.7, -69.145, "Canopy tower - sunrise (lodge)"], [-12.5933, -69.1891, "Puerto Maldonado"], [-13.5145, -71.976, "Cusco San Blas - last evening"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Cusco San Blas.jpg","c":"San Blas quarter, Cusco"},{"f":"Amazon rainforest canopy.jpg","c":"Morning mist over the jungle canopy"},{"f":"Sunrise in the Amazon rainforest.jpg","c":"Sunrise breaks over the Amazon"},{"f":"Aerial view of the Amazon Rainforest.jpg","c":"The forest stretches to the horizon"},{"f":"Obelisco de Puerto Maldonado.jpg","c":"Puerto Maldonado's obelisk lookout"},{"f":"Cusco at night.jpg","c":"Cusco's rooftops glowing after dark"},{"f":"Plaza de Armas del Cusco de noche.jpg","c":"The Plaza de Armas lit up at night"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>
