@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>04:30</b>Tour pickup, sleep in the van</li><li><b>07:00</b>Trailhead breakfast, Cusipata</li><li><b>08:00</b>Hike out - slow, steady, single file</li><li><b>10:00</b>Vinicunca viewpoint</li><li><b>10:45</b>Optional Red Valley loop</li><li><b>12:30</b>Trailhead lunch</li><li><b>16:30</b>Back in Cusco, rest evening</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vinicunca_o_Montaña_de_Siete_Colores,_Perú,_2018.jpg?width=1200" alt="Vinicunca - the Rainbow Mountain" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Vinicunca - the Rainbow Mountain</div>
-<figcaption>Vinicunca - the Rainbow Mountain &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Group tour ~30 EUR incl. transport + meals + entry; private 7-seat van ~170 EUR total</li><li>Horses available on-site (~15 EUR) for most of the ascent</li><li>This is the skip-day if anyone struggled with altitude - it is optional beauty</li><li>After rain the colours mute - tours can shift a day if forecast is bad</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Shoot the stripes AFTER 9:30 when sun clears the ridge - before that they are flat</li><li>Red Valley: saturated ochre bowls, best wide + polarising effect</li><li>Alpaca portraits on the walk-in, long lens / zoom</li></ul></div>
@@ -51,4 +48,6 @@ topo().addTo(m);
 var P=[[-13.902, -71.354, "Cusipata trailhead"], [-13.8698, -71.3028, "Vinicunca viewpoint - 5,036 m"], [-13.876, -71.311, "Red Valley overlook (optional add-on)"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Vinicunca o Montaña de Siete Colores, Perú, 2018.jpg","c":"Vinicunca - the Rainbow Mountain"},{"f":"Vinicunca, Cusco, Peru.jpg","c":"Mineral stripes on Vinicunca's flank"},{"f":"Rainbow Mountain, Peru.jpg","c":"The painted ridge at 5,000 meters"},{"f":"Winikunka.jpg","c":"Winikunka under a high-Andean sky"},{"f":"Ausangate.jpg","c":"Snowbound Ausangate, Cusco's sacred apu"},{"f":"Nevado Ausangate.jpg","c":"Glaciers of Nevado Ausangate"},{"f":"Red Valley, Cusco, Peru.jpg","c":"The Red Valley beyond the pass"},{"f":"Alpacas in Peru.jpg","c":"Alpacas grazing at altitude"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

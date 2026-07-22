@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>07:30</b>Tour pickup</li><li><b>09:00</b>Vicunas at Pampa Canahuas</li><li><b>11:00</b>Bofedales wetlands, llama herds</li><li><b>12:00</b>Patapampa viewpoint - 8 volcanoes</li><li><b>13:30</b>Chivay lunch</li><li><b>15:30</b>La Calera thermal pools</li><li><b>19:00</b>Optional folklore dinner, Wititi dancing</li><li><b>21:00</b>Cold-night sleep, Chivay</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vicuñas_en_Pampa_Cañahuas,_Arequipa.jpg?width=1200" alt="Vicunas at Pampa Canahuas" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">Vicunas at Pampa Canahuas</div>
-<figcaption>Vicunas at Pampa Canahuas &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Patapampa is a brief stop - fine even if tired; it is the 2nd-highest point of the trip</li><li>Colca entry ticket ~17 EUR collected on the road - keep it for tomorrow</li><li>Swimwear + towel for the springs (entry ~4 EUR, towel rental available)</li><li>Chivay nights hit 0 C - the pools at dusk are the warm place</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Vicunas: long zoom, keep the volcano cone in frame</li><li>Patapampa: the stacked stone apachetas + summits panorama</li><li>Steam over the pools at dusk - moody phone shots work great</li></ul></div>
@@ -51,4 +48,6 @@ topo().addTo(m);
 var P=[[-16.011, -71.416, "Pampa Canahuas vicuna reserve"], [-15.759, -71.548, "Patapampa - Mirador de los Volcanes, 4,910 m"], [-15.6383, -71.6011, "Chivay - overnight"], [-15.631, -71.585, "La Calera hot springs"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Vicuñas en Pampa Cañahuas, Arequipa.jpg","c":"Vicunas at Pampa Canahuas"},{"f":"Vicunacrop.jpg","c":"Vicuña, graceful camelid of the altiplano"},{"f":"Mirador de los Volcanes, Patapampa.jpg","c":"Volcano panorama from Patapampa pass"},{"f":"Chivay, Peru.jpg","c":"Chivay, gateway to the Colca Valley"},{"f":"La Calera hot springs, Chivay.jpg","c":"Steaming pools of La Calera"},{"f":"Colca Valley, Peru.jpg","c":"Terraced fields of the Colca Valley"},{"f":"Valle del Colca, Perú.jpg","c":"Pre-Inca terraces above the Colca River"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

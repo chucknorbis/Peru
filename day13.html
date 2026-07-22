@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>06:30</b>Port; boat out through the reed channels</li><li><b>07:30</b>Uros: island demo, optional reed-boat ride</li><li><b>09:30</b>Open-water crossing (2.5 h) - deck seats</li><li><b>12:00</b>Taquile: stone path climb</li><li><b>13:00</b>Grilled-trout lunch overlooking the lake</li><li><b>15:00</b>Descend to the port; return crossing</li><li><b>17:30</b>Puno</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Uros_Islands,_Lake_Titicaca,_Peru.jpg?width=1200" alt="The Uros floating islands" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">The Uros floating islands</div>
-<figcaption>The Uros floating islands &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>The lake sun is the trip's most dangerous: SPF50, glasses, hat - reapply</li><li>Small soles for Uros crafts and the reed-boat ride (~2 EUR)</li><li>Taquile's stone steps at 3,950 m - slowest pace of the trip</li><li>Mornings on the water are freezing; layers that shed by noon</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Uros: golden reed textures + colour-block textiles, shoot low</li><li>The crossing: deep-blue water bands from the bow</li><li>Taquile arch gateway framing the lake - classic shot before lunch</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-15.833, -70.021, "Puno port - 07:00 departure"], [-15.818, -69.972, "Uros floating islands"], [-15.775, -69.685, "Taquile Island - lunch terraces"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Uros Islands, Lake Titicaca, Peru.jpg","c":"The Uros floating islands"},{"f":"Uros Floating Islands.jpg","c":"Totora-reed homes of the Uros"},{"f":"Totora boat on Lake Titicaca.jpg","c":"Traditional totora reed boat"},{"f":"Islas de los Uros, Lago Titicaca, Perú.jpg","c":"Reed island village on Titicaca"},{"f":"Taquile Island, Lake Titicaca, Peru.jpg","c":"Terraced hillsides of Taquile"},{"f":"Isla Taquile.jpg","c":"Footpath across Taquile island"},{"f":"Lake Titicaca, Peru.jpg","c":"Deep blue waters of Lake Titicaca"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

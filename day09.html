@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>09:00</b>Fly CUZ-PEM (40 min)</li><li><b>10:30</b>Lodge office: store big bags, boots issued</li><li><b>11:30</b>Motor-canoe upriver (1-2 h) - watch the banks</li><li><b>13:30</b>Lodge lunch + hammock hour</li><li><b>16:30</b>Sunset river cruise</li><li><b>19:00</b>Dinner</li><li><b>20:00</b>Caiman spotting by torchlight</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tambopata_River.jpg?width=1200" alt="The Tambopata river, Madre de Dios" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">The Tambopata river, Madre de Dios</div>
-<figcaption>The Tambopata river, Madre de Dios &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>3d/2n all-inclusive lodge: budget ~170 EUR pp, mid-range ~280 EUR pp - book ahead for 7</li><li>Pack a soft duffel; main luggage stores free in town</li><li>Yellow-fever vaccination recommended for this region</li><li>Lodge electricity often runs only a few evening hours - power banks</li><li>Malaria risk is low but discuss prophylaxis with a travel doctor</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Bow-of-the-canoe shots: river bends + storm light</li><li>Sunset cruise: silhouettes of island trees, 17:00-17:30</li><li>Night torch beams - crank ISO, brace on the gunwale</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-12.6136, -69.2286, "Puerto Maldonado airport (PEM)"], [-12.598, -69.185, "River port - canoe departure"], [-12.7, -69.15, "Lodge zone, Madre de Dios/Tambopata"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Tambopata River.jpg","c":"The Tambopata river, Madre de Dios"},{"f":"Puerto Maldonado, Peru.jpg","c":"Puerto Maldonado, gateway to the jungle"},{"f":"Puerto Maldonado.jpg","c":"Riverside streets of Puerto Maldonado"},{"f":"Madre de Dios River.jpg","c":"The broad Madre de Dios river"},{"f":"Rio Madre de Dios.jpg","c":"Silt-brown waters of the Madre de Dios"},{"f":"Boat on the Tambopata River.jpg","c":"Longboat heading upriver"},{"f":"Tambopata Research Center.jpg","c":"A lodge deep in the Tambopata forest"},{"f":"Sunset over the Madre de Dios River.jpg","c":"Dusk settles over the Madre de Dios"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>

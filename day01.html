@@ -25,10 +25,7 @@
     <div class="box" style="margin-top:18px"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Today's timeline</h3><ul class="tl"><li><b>14:00</b>Land LIM - new terminal, immigration, SIM</li><li><b>15:30</b>Van transfer to Miraflores (45-60 min)</li><li><b>17:00</b>Malecon walk: Parque del Amor to Larcomar</li><li><b>19:30</b>Ceviche dinner</li><li><b>21:30</b>Early night - jet lag reset</li></ul></div>
   </div>
 </div>
-<figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vista_panorámica_de_la_Costa_Verde_(Miraflores).jpg?width=1200" alt="The Costa Verde cliffs at Miraflores" loading="lazy"
-  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-<div class="fallback" style="display:none">The Costa Verde cliffs at Miraflores</div>
-<figcaption>The Costa Verde cliffs at Miraflores &middot; photo: Wikimedia Commons (loads online)</figcaption></figure>
+<div class="gal" data-gallery aria-label="Photo gallery"></div>
 <div class="boxgrid">
 <div class="box "><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h8V4"/></svg> Field notes</h3><ul><li>Sol (PEN) ~4.0 = 1 EUR; best rates at Miraflores casas de cambio, not the airport</li><li>Uber/Cabify are the safe taxi option citywide</li><li>Never drink tap water anywhere in Peru</li><li>Pre-book the airport van - arrivals-hall touts overcharge</li><li>Claro/Movistar prepaid data ~10 EUR covers the whole trip</li></ul></div>
 <div class="box tone-clay"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7l2-3h4l2 3"/></svg> Photo tips</h3><ul><li>Golden hour (17:00-18:00) on the Malecon: paragliders backlit over the ocean</li><li>Parque del Amor mosaic wall - wide angle, sunset behind the El Beso statue</li><li>Larcomar terraces: frame the cliffs curving north with a long exposure</li></ul></div>
@@ -51,4 +48,6 @@ osm().addTo(m);
 var P=[[-12.0219, -77.1143, "Jorge Chavez Airport (arrival)"], [-12.1211, -77.0297, "Parque Kennedy - Miraflores hub"], [-12.131, -77.033, "Malecon clifftop promenade"], [-12.1273, -77.0364, "Parque del Amor"], [-12.1318, -77.0306, "Larcomar cliff terraces (sunset drink)"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
+<script>var GALLERY=[{"f":"Vista panorámica de la Costa Verde (Miraflores).jpg","c":"The Costa Verde cliffs at Miraflores"},{"f":"Parque Kennedy, Miraflores, Lima.jpg","c":"Parque Kennedy, the heart of Miraflores"},{"f":"Parque Central de Miraflores.jpg","c":"Central park of Miraflores district"},{"f":"Malecón de Miraflores.jpg","c":"Clifftop malecón above the Pacific"},{"f":"Malecón Cisneros, Miraflores, Lima.jpg","c":"Strolling the Malecón Cisneros"},{"f":"Parque del Amor, Miraflores.jpg","c":"Parque del Amor on the cliff edge"},{"f":"El Beso, Parque del Amor, Lima.jpg","c":"El Beso sculpture by Víctor Delfín"},{"f":"Larcomar, Miraflores.jpg","c":"Larcomar mall built into the cliffs"}];</script>
+<script src="gallery.js" defer></script>
 </body></html>
