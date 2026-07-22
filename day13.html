@@ -10,7 +10,7 @@
 <div class="topbar"><div class="brand"><b>PERU</b>EXPEDITION 2027 &middot; CLUJ GROUP OF 7</div>
 <nav class="topnav"><a href="index.html">Route</a><a href="index.html#days">Days</a><a href="summary.html">Field manual</a></nav></div>
 
-<div class="eyebrow" style="margin-top:26px">Day 13 &middot; Tue May 12, 2027 &middot; Lake Titicaca</div>
+<div class="eyebrow" style="margin-top:26px">Day 13 &middot; Wed May 12, 2027 &middot; Lake Titicaca</div>
 <h1 class="disp">Uros Reed Islands &amp; Taquile</h1>
 <div class="datastrip"><div><div class="k">Altitude</div><div class="v" style="font-size:15px">3,810-3,950 m</div></div><div><div class="k">Difficulty</div><div class="v" style="font-size:15px">Moderate</div></div><div><div class="k">On foot</div><div class="v" style="font-size:15px">5 km + steps</div></div><div><div class="k">Est. cost/pp</div><div class="v" style="font-size:15px">~35 EUR</div></div><div><div class="k">Sunrise / set</div><div class="v" style="font-size:15px">05:58 / 17:24</div></div><div><div class="k">Weather</div><div class="v" style="font-size:15px">16 C, savage UV</div></div></div>
 <div class="hl"><div><div class="n">HIGHLIGHT 01</div><div class="t">Islands woven entirely from reeds</div></div><div><div class="n">HIGHLIGHT 02</div><div class="t">Knitting men of UNESCO Taquile</div></div><div><div class="n">HIGHLIGHT 03</div><div class="t">Bolivian cordillera across sapphire water</div></div></div>
@@ -18,7 +18,7 @@
   <div>
     <div id="map" class="map"></div>
     <div class="map-cap">Numbered points of interest &middot; drag &amp; zoom &middot; tap a pin for its name</div>
-    <div class="poi"><div><b>1</b>Puno port - 07:00 departure<span class="co">-15.8330, -70.0210</span></div><div><b>2</b>Uros floating islands<span class="co">-15.8180, -69.9720</span></div><div><b>3</b>Taquile Island - lunch terraces<span class="co">-15.7750, -69.6850</span></div></div>
+    <div class="poi"><div><b>1</b>Puno port - 06:30 departure<span class="co">-15.8330, -70.0210</span></div><div><b>2</b>Uros floating islands<span class="co">-15.8180, -69.9720</span></div><div><b>3</b>Taquile Island - lunch terraces<span class="co">-15.7750, -69.6850</span></div></div>
   </div>
   <div>
     <div class="prose"><p class="dropcap">The lake makes its own weather and its own worlds. First the Uros: dozens of springy platforms woven wholesale from totora reed - islands, houses, boats and all - endlessly re-layered by the families who anchor them.</p><p>Then two and a half hours of open water to Taquile, where society still runs on the Inca code (don't steal, don't lie, don't be lazy) and the men do the knitting - their hats encode marital status. Lunch is grilled trout on a terrace above impossibly blue water, Bolivia's snow cordillera floating on the horizon.</p></div>
@@ -45,7 +45,7 @@ function pin(n,gold){return L.divIcon({className:'',html:'<div class="numpin'+(g
 
 var m=L.map('map',{scrollWheelZoom:false}).setView([-15.79,-69.85],11);
 osm().addTo(m);
-var P=[[-15.833, -70.021, "Puno port - 07:00 departure"], [-15.818, -69.972, "Uros floating islands"], [-15.775, -69.685, "Taquile Island - lunch terraces"]];
+var P=[[-15.833, -70.021, "Puno port - 06:30 departure"], [-15.818, -69.972, "Uros floating islands"], [-15.775, -69.685, "Taquile Island - lunch terraces"]];
 P.forEach(function(p,i){L.marker([p[0],p[1]],{icon:pin(i+1)}).addTo(m).bindPopup('<b>'+(i+1)+'. '+p[2]+'</b>');});
 </script>
 <script>var GALLERY=[{"f":"Uros Islands, Lake Titicaca, Peru.jpg","c":"The Uros floating islands"},{"f":"Uros Floating Islands.jpg","c":"Totora-reed homes of the Uros"},{"f":"Totora boat on Lake Titicaca.jpg","c":"Traditional totora reed boat"},{"f":"Islas de los Uros, Lago Titicaca, Perú.jpg","c":"Reed island village on Titicaca"},{"f":"Taquile Island, Lake Titicaca, Peru.jpg","c":"Terraced hillsides of Taquile"},{"f":"Isla Taquile.jpg","c":"Footpath across Taquile island"},{"f":"Lake Titicaca, Peru.jpg","c":"Deep blue waters of Lake Titicaca"}];</script>
